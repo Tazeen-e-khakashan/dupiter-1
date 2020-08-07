@@ -32,9 +32,9 @@
           </tbody>
         </table>
         <div class="flex flex-col text-center bg-white rounded shadow-lg">
-          <div class="block w-full">
-            <table class="text-center py-4 px-2 overflow-hidden">
-              <thead class>
+          <div class="w-full container mx-auto">
+            <table class="w-full">
+              <thead>
                 <tr class="border-b-2">
                   <th
                     v-for="(h, index) in headers"
@@ -43,7 +43,7 @@
                   >{{ h }}</th>
                 </tr>
               </thead>
-              <tbody class="text-center">
+              <tbody>
                 <tr v-for="(row, rowIndex) in data" :key="rowIndex" class="border-b-2">
                   <td v-for="(d, dataIndex) in row" :key="dataIndex" class="px-4 py-2">{{ d }}</td>
                 </tr>
